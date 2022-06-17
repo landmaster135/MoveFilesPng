@@ -1,13 +1,15 @@
 :: Dependency is pngquant.
 
 :: Initializes variables
-set dlFolder=%userprofile%\Downloads
+set destFolder=ScreenshotOfSatisfactory
+set destFolderFull="%userprofile%\Downloads\%destFolder%"
 set dlFileName=pngquant-windows
 set exeFolder="%dlFolder%\%dlFileName%\pngquant"
 :: Initializes variables
 set destFolder="%userprofile%\Downloads\ScreenshotOfSatisfactory"
 set srcFolder="%userprofile%\Documents\My Games\FactoryGame\Screenshots"
 echo %destFolder%
+echo %destFolderFull%
 echo %srcFolder%
 :: Downloads file
 cd %dlFolder%
@@ -23,13 +25,14 @@ mkdir %compressedFolder% > NUL 2>&1
 set compressedMark=-fs8
 move %srcFolder%\*%compressedMark%* %compressedFolder%
 :: Moves files
-move /-Y %srcFolder%\* %destFolder%
+move /-Y %srcFolder%\* %destFolderFull%
 :: Releases variables
 cd %exeFolder%
 set dlFolder=
 set dlFileName=
 set exeFolder=
 set destFolder=
+set destFolderFull=
 set srcFolder=
 set compressedFolder=
 set compressedMark=
@@ -37,6 +40,7 @@ set compressedMark=
 %dlFileName%
 %exeFolder%
 %destFolder%
+%destFolderFull%
 %srcFolder%
 %compressedFolder%
 %compressedMark%
