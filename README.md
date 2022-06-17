@@ -2,7 +2,7 @@
 
 # Dependencies
 
-- [pngquantum](https://pngquant.org) (source repo is [here](https://github.com/kornelski/pngquant).)
+- [pngquant](https://pngquant.org) (source repo is [here](https://github.com/kornelski/pngquant).)
 
 # Caution
 
