@@ -6,7 +6,7 @@ echo %destFolder%
 echo %srcFolder%
 :: Moves files
 mkdir %destFolderFull% > NUL 2>&1
-move /-Y %srcFolder%\* %destFolder%
+move /-Y %srcFolder%\* %destFolderFull%
 :: Releases variables
 set destFolder=
 set destFolderFull=
