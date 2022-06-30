@@ -4,7 +4,7 @@ Moves files to other folder.
 
 In addition, `20220617_MoveFilesWithPngquant.bat` compresses images and move those compressed files to temporary folder.
 
-I always use `20220617_MoveFiles,bat` only.
+I always use `20220617_MoveFiles.bat` only.
 
 Execute these commands anywhere.
 
